@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 98vw;
+    height: 80vh;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(../imagens/pexels-taryn-elliott-4098987.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+main > header{
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 5px solid rgb(0, 0, 0);
+}
+header > h1{
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+}
+article{
+    display: inline-flex;
+    gap: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 20px;
+    width: 50%;
+    min-width: 800px;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.404);
+}
+hr{
+    width: 80%;
+    border: 1px rgba(0, 0, 0, 0.377) solid;
+}
+div.quadrado{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 250px;
+    margin-top: 80px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;    
+    background-color: #939099;
+    box-shadow: 1px 5px 8px 3px rgba(0, 0, 0, 0.219);
+    background: linear-gradient(to left, #93909936 50%, #93909938 50%) right;
+    transition: 1s;
+}
+div#q1 > h1{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+div#q2 > h1{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+div#q3 > h1{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+div#q1 > p {
+    font-size: smaller;
+    text-align: center;
+}
+div#q2 > p {
+    font-size: smaller;
+    text-align: center;
+}
+div#q3 > p {
+    font-size: smaller;
+    text-align: center;
+}
+.botao1,.botao2,.botao3{
+    background-color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer; 
+    background: linear-gradient(to left, black 50%, black 50%) right; 
+}
+.botao1,.botao2,.botao3 > span{
+    font-weight: bolder;
+}
+.botao1{
+    margin-top: 41px;
+    
+}
+.botao2{
+    margin-top: 12px;
+}
+.botao3{
+    margin-top: 25px;
+}
+img{
+    display: flex;
+    width: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+div#q1:hover{
+    transition: 1.5s;
+    background-color:#8AC0FF;
+    color: white;
+    background: linear-gradient(to right, #8AC0FF 50%, #93909927 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+}
+div#q2:hover{
+    transition:1.5s;
+    background: linear-gradient(to right, #e201dbce 50%, #93909927 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    color: white;
+}
+div#q3:hover{
+    transition: 1.5s;
+    color: white;
+    background-image: linear-gradient(to right,#FF0136 50%,#93909927 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+}
+.botao1:hover{
+    background-image: linear-gradient(to right, white 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    color: #3D96FF;
+    transition: 1.5s;
+    border: 1px solid white;
+    box-shadow: 2px 1px 2px 3px rgba(255, 255, 255, 0.253);
+}
+.botao2:hover{
+    color: #EA4DFF;
+    transition: 1.5s;
+    background-image: linear-gradient(to right, white 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    border: 1px solid white;
+    box-shadow: 2px 1px 2px 3px rgba(255, 255, 255, 0.253);
+}
+.botao3:hover{
+    color: #FF0136;
+    transition: 1.5s;
+    background-image: linear-gradient(to right, white 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    border: 1px solid white;
+    box-shadow: 2px 1px 2px 3px rgba(255, 255, 255, 0.253);
+}
+.quadrado:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 2s ease-in-out;
+}
